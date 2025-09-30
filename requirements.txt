@@ -1,0 +1,15 @@
+langchain
+langchain-community
+langchain-openai
+openai
+chromadb
+psycopg2-binary
+gradio
+python-dotenv
+pydantic
+huggingface_hub
+sentence-transformers
+pypdf
+unstructured
+beautifulsoup4
+lxml
