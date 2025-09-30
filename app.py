@@ -6,23 +6,23 @@ import gradio as gr
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_openai import ChatOpenAI
+
 
 # LangChain imports
 from langchain_community.document_loaders import WebBaseLoader, PyPDFLoader, UnstructuredURLLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.schema import Document
 
 from langchain.agents import AgentType, initialize_agent
 from langchain.memory import ConversationBufferMemory
+from langchain_community.chat_models import ChatOpenAI
 from langchain.tools import StructuredTool
 from langchain.tools.retriever import create_retriever_tool
 
 # --- Load environment ---
 load_dotenv()
-os.environ["USER_AGENT"] = "simone-rag-bot/0.1"
 
 
 from langchain.text_splitter import CharacterTextSplitter
