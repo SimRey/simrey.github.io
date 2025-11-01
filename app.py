@@ -33,6 +33,9 @@ def rag_tool():
     """
     urls = [
         "./assets/extra/CV.pdf",  # local PDF
+        "https://simrey.github.io/extra/aboutme.html",  # HTML
+        "https://simrey.github.io/extra/education.html",  # HTML
+        "https://simrey.github.io/experience.html",  # HTML
         "https://simrey.github.io/projects.html",  # HTML
         "https://simrey.github.io/interests.html",  # HTML
     ]
